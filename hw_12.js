@@ -13,7 +13,7 @@ const result = (array) => {
     if(array.length === 0) {
         return [];
     }
-    const count = array.reduce((elements, arr) => (arr > 0 ? elements + 1 : elements), 0)
+    const count = array.filter(item => (item > 0 ? true : false)).length;
     const sum = array.reduce((elements, arr) => (arr < 0 ? elements + arr : false), 0)
 
     const res = [count, sum];
@@ -21,5 +21,5 @@ const result = (array) => {
     
 } 
 
-console.log(result([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));
+console.log(result([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])) ;
 console.log(result([]));
