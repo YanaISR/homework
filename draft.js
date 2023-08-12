@@ -69,7 +69,7 @@ const intoSquares = arr => {
     for (let item of arr) {
         newSquareArray.push(item ** 2);
     }
-    console.log(newSquareArray);
+    console.log(newSquareArray); 
 }
 
 intoSquares([1,2,3,4])
